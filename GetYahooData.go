@@ -8,7 +8,7 @@ import (
 )
 
 func GetYahooData() {
-	migrations.Migrate(os.Getenv["DATABASE_NAME"])
+	migrations.Migrate()
 	start := time.Now()
 	count := 0
 
